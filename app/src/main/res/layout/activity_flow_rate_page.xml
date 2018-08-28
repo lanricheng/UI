@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/flow_rate_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值号码："
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入手机号码    "
+                android:textCursorDrawable="@null"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_number_list"
+                android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>          <!--text1-->
+
+        <TextView
+            android:id="@+id/flow_rate_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/flow_rate_text1"
+            android:layout_marginTop="5dp"/>              <!--line1-->
+
+        <TextView
+            android:id="@+id/flow_rate_line2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/flow_rate_line1"
+            android:layout_marginTop="150dp"/>              <!--line2-->
+
+        <LinearLayout
+            android:id="@+id/flow_rate_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/flow_rate_line2"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款账户："
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请选择付款账户"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/arrow_down"
+                android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>          <!--text2-->
+
+        <TextView
+            android:id="@+id/flow_rate_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/flow_rate_text2"
+            android:layout_marginTop="5dp"/>              <!--line3-->
+
+        <Button
+            android:id="@+id/flow_rate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flow_rate_line3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorback"
+            android:text="下一步"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />                <!--button-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flow_rate_button"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/icon_tips"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/flow_rate_tip0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示 :"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    />             <!--tip0-->
+
+                <TextView
+                    android:layout_below="@+id/flow_rate_tip0"
+                    android:id="@+id/flow_rate_tip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.手机充值客服热线：400-111-7666"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    />             <!--tip1-->
+
+                <TextView
+                    android:layout_below="@+id/flow_rate_tip1"
+                    android:id="@+id/flow_rate_tip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.月末月初时段是充值高峰，运营商充值缓慢，请耐心等待"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    />             <!--tip2-->
+
+                <TextView
+                    android:layout_below="@+id/flow_rate_tip2"
+                    android:id="@+id/flow_rate_tip3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.请核实号码是否输入正确，充错号码的资金无法退回"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    />             <!--tip3-->
+
+                <TextView
+                    android:layout_below="@+id/flow_rate_tip3"
+                    android:id="@+id/flow_rate_tip4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.本项服务不提供发票，不参加运营商的促销活动"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    />             <!--tip4-->
+
+                <TextView
+                    android:layout_below="@+id/flow_rate_tip4"
+                    android:id="@+id/flow_rate_tip5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5.部分状态特殊的手机号码（如空号、销号等）造成无法充值的，将会进行退款"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    />             <!--tip5-->
+
+            </RelativeLayout>
+
+        </LinearLayout>          <!--tips-->
+
+
+    </LinearLayout>
+
+</ScrollView>

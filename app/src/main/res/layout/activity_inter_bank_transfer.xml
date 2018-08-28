@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.administrator.bankapp.TitleLayout
+        android:id="@+id/inter_bank_transfer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.administrator.bankapp.TitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inter_bank_transfer_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_bigline1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gainsboro" />             <!--分隔行-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_bigline1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="付款账号："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入收款账号  "
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_down" />
+
+            </LinearLayout>          <!--text1-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_text1"
+                android:layout_marginTop="5dp"/>              <!--line1-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_line1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用余额："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="¥2234.56"
+                    android:gravity="center_vertical|right"
+                    android:textSize="15dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>          <!--text2-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_bigline2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/inter_bank_transfer_text2"
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro" />             <!--分隔行-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_bigline2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账金额："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入转账金额  "
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+            </LinearLayout>          <!--text3-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_bigline3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/inter_bank_transfer_text3"
+                android:layout_marginTop="40dp"
+                android:background="@color/gainsboro" />             <!--分隔行-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_bigline3"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收款户名："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入收款户名  "
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/cerditcard_sidebar_icon_personal_information_maintenance" />
+
+            </LinearLayout>          <!--text4-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_text4"
+                android:layout_marginTop="5dp"/>              <!--line2-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_line2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收款账号："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入收款账号  "
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+            </LinearLayout>          <!--text5-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_text5"
+                android:layout_marginTop="5dp"/>              <!--line3-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_line3"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收款人开户行："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择开户行  "
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_down" />
+
+            </LinearLayout>          <!--text6-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_bigline4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/inter_bank_transfer_text6"
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro" />             <!--分隔行-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_bigline4"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用途："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:text="请选择用途  "
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_regular" />
+
+            </LinearLayout>          <!--text7-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_text7"
+                android:layout_marginTop="5dp"/>              <!--line4-->
+
+            <LinearLayout
+                android:id="@+id/inter_bank_transfer_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_line4"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附言："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="可不填  "
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+            </LinearLayout>          <!--text8-->
+
+            <TextView
+                android:id="@+id/inter_bank_transfer_line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/inter_bank_transfer_text8"
+                android:layout_marginTop="5dp"/>              <!--line5-->
+
+            <RadioGroup
+                android:id="@id/inter_bank_transfer_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inter_bank_transfer_line5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="实时转出"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="普通转出"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="次日转出"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"/>
+
+            </RadioGroup>          <!--Radiobutton-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inter_bank_transfer_radiobutton"
+                android:layout_marginTop="5dp"
+                android:background="@color/gainsboro">
+
+                <Button
+                    android:id="@+id/inner_bank_transfer_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inner_bank_transfer_notice"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorback"
+                    android:text="下一步"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff" />                <!--button-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inner_bank_transfer_button"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/icon_tips"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="温馨提示 ：增强防范意识，谨慎给陌生人转账，谨防电信诈骗。"
+                        android:textSize="13dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

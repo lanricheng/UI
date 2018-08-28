@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.administrator.bankapp.TitleLayout
+        android:id="@+id/mobile_number_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.administrator.bankapp.TitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_number_layout_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_left_regular"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorback"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right_regular"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mobile_number_layout_column1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gainsboro"
+                android:layout_below="@+id/mobile_number_layout_card"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:text="收款人信息"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_column1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入手机号"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_number_list"
+                    android:layout_marginLeft="15dp"/>
+
+
+            </LinearLayout>          <!--text1-->
+
+            <TextView
+                android:id="@+id/mobile_number_layout_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_text1"
+                android:layout_marginTop="5dp"/>              <!--line1-->
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_line1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="户名："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入户名"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+            </LinearLayout>          <!--text2-->
+
+            <TextView
+                android:id="@+id/mobile_number_layout_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_text2"
+                android:layout_marginTop="5dp"/>              <!--line2-->
+
+            <RelativeLayout
+                android:id="@+id/mobile_number_layout_column2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gainsboro"
+                android:layout_below="@+id/mobile_number_layout_line2"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:text="转账金额及备注"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_column2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账金额："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入转账金额"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+            </LinearLayout>          <!--text3-->
+
+            <TextView
+                android:id="@+id/mobile_number_layout_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_text3"
+                android:layout_marginTop="5dp"/>              <!--line3-->
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_line3"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转账方式："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:text="实时"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_regular"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </LinearLayout>          <!--text4-->
+
+            <TextView
+                android:id="@+id/mobile_number_layout_line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_text4"
+                android:layout_marginTop="5dp"/>              <!--line4-->
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_line4"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用途："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_regular"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </LinearLayout>          <!--text5-->
+
+            <TextView
+                android:id="@+id/mobile_number_layout_line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/mobile_number_layout_text5"
+                android:layout_marginTop="5dp"/>              <!--line5-->
+
+            <Button
+                android:id="@+id/mobile_number_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobile_number_layout_line5"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/colorback"
+                android:text="下一步"
+                android:textSize="25dp"
+                android:textColor="#ffffff" />                <!--button-->
+
+            <LinearLayout
+                android:id="@+id/mobile_number_layout_select"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/mobile_number_layout_line5"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否通知对方  "
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobile_number_layout_button"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/icon_tips"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示 ：增强防范意识，谨慎给陌生人转账，谨防电信诈骗。"
+                    android:textSize="13dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

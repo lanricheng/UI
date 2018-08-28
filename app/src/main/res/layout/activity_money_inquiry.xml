@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.administrator.bankapp.TitleLayout
+        android:id="@+id/money_inquiry_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.administrator.bankapp.TitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_inquiry_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/money_inquiry_moneylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp"
+                    android:layout_marginTop="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/account_money_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2234.56"
+                    android:textSize="60dp"
+                    android:textColor="@color/blue"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/money_inquiry_yuetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    余额"
+                android:textSize="20dp"
+                android:layout_below="@+id/money_inquiry_moneylayout"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/money_inquiry_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_yuetext"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/money_inquiry_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_line1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="可用余额："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥2234.56"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/money_inquiry_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_text1"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/money_inquiry_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_line2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="卡号："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234 1234 1234 1234 1234"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/money_inquiry_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_text2"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/money_inquiry_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_line3"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="户名："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/money_inquiry_line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_text3"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/money_inquiry_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_line4"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="账户状态："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正常"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/money_inquiry_line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_text4"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/money_inquiry_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/money_inquiry_line5"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="开户行："
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广西桂林漓江农村合作银行国贸支行"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorback"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/money_inquiry_line6"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/money_inquiry_text5"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/money_inquiry_big_img"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/money_inquiry_line6"
+                android:layout_marginTop="30dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_left_regular"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorback"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right_regular"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/money_inquiry_big_img"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="行内转账"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorback"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="跨行转账"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorback"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="明细查询"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorback"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.administrator.bankapp.TitleLayout
+        android:id="@+id/phone_recharge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.administrator.bankapp.TitleLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_recharge_layout1"
+        android:layout_below="@id/phone_recharge_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/phone_recharge_huafei"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="充话费"/>
+
+        <TextView
+            android:id="@+id/phone_recharge_liuliang"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="充流量"/>
+
+    </LinearLayout>
+
+    <com.example.administrator.bankapp.CustomViewPager
+        android:layout_below="@+id/phone_recharge_layout1"
+        android:id="@+id/phone_recharge_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

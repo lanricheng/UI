@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+tools:context=".MainActivity" >
+
+<!-- 使用自定义的侧滑布局，orientation必须为水平方向 -->
+
+<com.example.administrator.bankapp.SlidingLayout
+    android:id="@+id/slidingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <!--
+        侧滑布局的根节点下，有且只能有两个子元素,这两个子元素必须是四种基本布局之一,
+        即LinearLayout, RelativeLayout, FrameLayout或TableLayout。
+        第一个子元素将做为左侧布局，初始化后被隐藏。第二个子元素将做为右侧布局，
+        也就是当前Activity的主布局，将主要的数据放在里面。
+    -->
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorback">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/touxiang">
+
+            <ImageView
+                android:id="@+id/leftlayoutimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/sidebar_icon_headportrait" />
+
+            <TextView
+                android:id="@+id/denglutext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/leftlayoutimg"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="点击登录" />
+
+        </RelativeLayout>     <!--头像-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/touxiang">
+
+            <LinearLayout
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:src="@mipmap/sidebar_icon_nicknamesetting"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="昵称设置"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>         <!--第1个item-->
+
+            <LinearLayout
+                android:id="@+id/item2"
+                android:layout_below="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:src="@mipmap/sidebar_icon_informationsetting"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="预留信息设置"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>         <!--第2个item-->
+
+            <LinearLayout
+                android:id="@+id/item3"
+                android:layout_below="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:src="@mipmap/sidebar_icon_securitycenter"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="安全中心"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>         <!--第3个item-->
+
+            <LinearLayout
+                android:id="@+id/item4"
+                android:layout_below="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:src="@mipmap/sidebar_icon_account_protection"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="账号保护"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>         <!--第4个item-->
+
+            <LinearLayout
+                android:id="@+id/item5"
+                android:layout_below="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:src="@mipmap/sidebar_icon_aboutus"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="关于我们"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>         <!--第5个item-->
+
+        </RelativeLayout>     <!--选项-->
+
+    </RelativeLayout>       <!--左布局-->
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorback"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menuButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorback"
+                android:text="M" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="广西农村信用社"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/PhotoButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorback"
+                android:text="P" />
+
+        </LinearLayout>
+
+        <com.example.administrator.bankapp.CustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/homepage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/navigationbar_button_homepage_select" />
+
+            <Button
+                android:id="@+id/life"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/navigationbar_button_life_unselect" />
+
+            <Button
+                android:id="@+id/service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/navigationbar_button_service_unselect" />
+
+            <Button
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/navigationbar_button_more_unselect" />
+        </LinearLayout>
+
+
+    </RelativeLayout>       <!--右布局-->
+
+</com.example.administrator.bankapp.SlidingLayout>
+
+</LinearLayout>
+
